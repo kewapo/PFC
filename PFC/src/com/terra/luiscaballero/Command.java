@@ -1,0 +1,3 @@
+package com.terra.luiscaballero;
+
+public enum Command {NOTHING, STOP, START, VEHICLE1, VEHICLE2A, VEHICLE2B, VEHICLE3A, VEHICLE3B, VEHICLE4A, VEHICLE4B}

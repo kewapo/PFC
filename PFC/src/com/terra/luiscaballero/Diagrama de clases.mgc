@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.terra.luiscaballero.Command" x="560" y="89">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="true"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.terra.luiscaballero.NXTController" x="245" y="73">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="true"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="true"
+            accessors-accepted="true" constructors-accepted="true"/>
+        <Association
+            destinationClassName="com.terra.luiscaballero.Command"
+            endpointName="code" kind="Simple"/>
+        <Association
+            destinationClassName="com.terra.luiscaballero.BluetoothComms"
+            endpointName="coms" kind="Simple">
+            <Point x="320" y="228"/>
+        </Association>
+        <Communication destinationClassName="com.terra.luiscaballero.BluetoothComms"/>
+    </Class>
+    <Class name="com.terra.luiscaballero.BluetoothComms" x="17" y="171">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.terra.luiscaballero.NXTController"
+            endpointName="parent" kind="Simple">
+            <Point x="83" y="137"/>
+        </Association>
+        <Communication destinationClassName="com.terra.luiscaballero.NXTController"/>
+    </Class>
+    <Note x="527" y="52">Comandos disponibles</Note>
+    <Note x="191" y="38">Controla al robot con los comandos recibidos del PC</Note>
+    <Note x="-21" y="288">Thread que gestiona las comunicaciones</Note>
+</ClassDiagram>
