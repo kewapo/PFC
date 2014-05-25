@@ -54,7 +54,7 @@ public class NXTController {
 		Sa = S1.getLightValue();
 		Sb = S2.getLightValue();
 		Sa = 40 + Sa * 3 / 5; //No incluir en la documentaci—n. Son los roces.
-		Sb = 34 + Sb * 3 / 5; //No incluir en la documentaci—n. Son los roces.
+		Sb = 40 + Sb * 3 / 5; //No incluir en la documentaci—n. Son los roces.
 		coms.send(Sa);
 		coms.send(Sb);
 		LCD.drawString("send " + Sa + " - " + Sb, 0, 2);
