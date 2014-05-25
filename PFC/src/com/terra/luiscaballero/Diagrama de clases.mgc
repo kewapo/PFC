@@ -27,7 +27,7 @@
         </Association>
         <Communication destinationClassName="com.terra.luiscaballero.BluetoothComms"/>
     </Class>
-    <Class name="com.terra.luiscaballero.BluetoothComms" x="17" y="171">
+    <Class name="com.terra.luiscaballero.BluetoothComms" x="17" y="170">
         <AttributesDisplayFilter public-accepted="true"
             private-accepted="true" protected-accepted="true"
             default-accepted="true" static-accepted="false"/>
