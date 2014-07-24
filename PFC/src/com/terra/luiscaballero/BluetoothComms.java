@@ -46,7 +46,7 @@ public class BluetoothComms extends Thread {
 	 */
 	public void connect() {
 		LCD.clear();
-		LCD.drawString("Esperando conexion", 0, 0);
+		LCD.drawString("BUSCANDO AL PC", 0, 0);
 		connection = Bluetooth.waitForConnection();
 		LCD.clear();
 		LCD.drawString("Conectado", 0, 0);

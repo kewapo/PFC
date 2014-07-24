@@ -6,6 +6,7 @@ import lejos.nxt.MotorPort;
 import lejos.nxt.SensorPort;
 
 public class Vehiculo1 {
+	@SuppressWarnings("unused")
 	private final int	fordward = 1,
 						backward = 2,
 						stop = 3;
